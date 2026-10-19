@@ -1,6 +1,6 @@
 context:
   name: mcp-server-fetch
-  version: "2026.8.18"
+  version: "2026.10.19"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name | replace('-','_') }}/${{ name | replace('-','_') }}-${{ version }}.tar.gz
-    sha256: da12533c8218c7a4ee2eb9d789170a317cf758c07cb2cc0211a91bdb0d4b7254
+    sha256: bbdb6058496a7706584f351ef3e78eded14e153821edd69c34d3f2ba4d573e53
     patches:
       - mcp-2-compat.patch
 
